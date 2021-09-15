@@ -19,6 +19,12 @@ Absolute::Absolute(long first, long second)
     this->second = second;
 }
 
+long Absolute::firstValue() 
+{ // reset
+    cur = first;
+    return cur;
+} 
+
 long Absolute::nextValue()
 {
     cur = abs(first - second);

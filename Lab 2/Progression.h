@@ -1,5 +1,4 @@
-#ifndef PROGRESSION_H
-#define PROGRESSION_H
+
 class Progression
 { // a generic progression
 public:
@@ -17,6 +16,6 @@ protected:
     long cur;   // current value
 };
 
-#endif 
+
 
 

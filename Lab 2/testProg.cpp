@@ -1,18 +1,16 @@
 #include <iostream>
-#include "Progression.h"
+
 #include "Absolute.h"
 
 using namespace std;
 
-int main()
+int main(void)
 {
     int n;
-    long first, second;
-    Progression p;
-    Absolute ab(first, second);
+    Absolute ab(0,0);
     
     
     cout << "Enter n";
     cin >> n;
-    p.printProgression(n);
+    ab.Absolute::printProgression(n);
 }
