@@ -23,7 +23,7 @@ class absoluteProgression: public Progression
         first = 2;
         second = 200;
         }
-        absoluteProgression()
+        absoluteProgression(long, long)
         {
 
         }
@@ -31,6 +31,7 @@ class absoluteProgression: public Progression
         cur = std::abs (first - second); 
     protected:
         long second;
+        virtual long firstValue();
 
     
 
