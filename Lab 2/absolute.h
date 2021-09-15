@@ -1,21 +1,13 @@
 #include "Progression.h"
 
-class absolute: public Progression
+class Absolute : public Progression
 {
-    public:
-        absolute()
-        {
-        first = 2;
-        second = 200;
-        }
-        absolute()
-        {
+public:
+    Absolute();
 
-        }
-    private:
-        long second;
+    Absolute(long first, long second);
 
-    
-    Progression::
+protected:
+    long second;
+    long nextValue();
 };
-

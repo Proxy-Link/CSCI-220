@@ -1,3 +1,5 @@
+#ifndef PROGRESSION_H
+#define PROGRESSION_H
 class Progression
 { // a generic progression
 public:
@@ -5,7 +7,7 @@ public:
         : first(f), cur(f)
     {
     }
-    virtual int ˜Progression(){};     // destructor
+    virtual ~Progression(){};     // destructor
     void printProgression(int n); // print the first n values
 protected:
     virtual long firstValue(); // reset
@@ -15,25 +17,6 @@ protected:
     long cur;   // current value
 };
 
-class absoluteProgression: public Progression
-{
-    public:
-        absoluteProgression()
-        {
-        first = 2;
-        second = 200;
-        }
-        absoluteProgression(long, long)
-        {
+#endif 
 
-        }
-
-        cur = std::abs (first - second); 
-    protected:
-        long second;
-        virtual long firstValue();
-
-    
-
-};
 
