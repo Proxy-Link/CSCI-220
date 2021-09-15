@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int main(void)
+int main()
 {
     int n;
     Absolute ab(0,0);
@@ -12,5 +12,5 @@ int main(void)
     
     cout << "Enter n";
     cin >> n;
-    ab.Absolute::printProgression(n);
+    ab.printProgression(n);
 }
